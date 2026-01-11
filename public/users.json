@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "email": "demo@smartmoney.system",
+    "password": "demo",
+    "name": "Demo User",
+    "isPro": false
+  },
+  {
+    "id": 2,
+    "email": "admin@cryptomus.com",
+    "password": "admin",
+    "name": "Moderator"
+  },
+  {
+    "id": 3,
+    "email": "student1@gmail.com",
+    "password": "password123",
+    "name": "Александр К."
+  }
+]

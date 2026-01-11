@@ -1,0 +1,53 @@
+/* 1. Імпорт шрифту Manrope */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap');
+
+/* 2. Директиви Tailwind (ОБОВ'ЯЗКОВО) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Базові налаштування сторінки */
+body {
+  background-color: #0b0b0f; /* Глибокий чорний колір */
+  color: #ffffff; /* Білий текст */
+  font-family: 'Manrope', sans-serif;
+  overflow-x: hidden; /* Щоб не було горизонтального скролу */
+}
+
+/* 4. Ефект "Скло" (Glassmorphism) */
+.glass {
+  background: rgba(255, 255, 255, 0.03); /* Прозорий фон */
+  backdrop-filter: blur(10px); /* Розмиття заднього плану */
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Тонка рамка */
+}
+
+/* 5. Ефект світіння тексту */
+.green-glow {
+  text-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+}
+
+/* 6. Стилі для скролбару (щоб він був красивим, а не сірим) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0b0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 5px;
+  border: 1px solid #0b0b0f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22c55e; /* Зелений при наведенні */
+}
+
+/* 7. Додаткові утиліти (якщо Tailwind десь не підхопить) */
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 15px rgba(34, 197, 94, 0.5);
+  }
+}
