@@ -118,7 +118,6 @@ export default function Offer() {
             <p className="text-sm text-gray-400">
               GORPSCORE Systems<br/>
               E-mail: support@gorpscore.com<br/>
-              Режим работы техподдержки: Пн-Пт с 10:00 до 19:00
             </p>
           </div>
         </div>
